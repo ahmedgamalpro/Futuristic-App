@@ -1,0 +1,140 @@
+.hero-no-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+
+    width: 100%;
+    height: 560px;
+
+    background: #0B0121;
+    position: relative;
+    top: 1210px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        gap: 16px;
+
+        width: 83%;
+        height: 440px;
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: inset 0px 0.5px 0px rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0px -2px 10px rgba(233, 223, 255, 0.3)) drop-shadow(0px -2px 40px rgba(187, 155, 255, 0.15));
+        border-radius: 20px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
+
+            width: 64%;
+            height: 320px;
+
+            border-radius: 0px;
+            h2{
+                width: 246%;
+                height: 73px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 120%;
+                /* or 58px */
+
+                text-align: center;
+
+                color: #ECECEC;
+            }
+            p{
+                width: 246%;
+                height: 108px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                /* or 27px */
+
+                text-align: center;
+
+                color: #ECECEC;
+            }
+            .btn{
+                margin-top: 201px;
+            }
+
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .hero-no-image{
+        .container{
+            .content{
+                h2{
+                    width: 141%;
+                    font-size: 26px;
+                }
+                p{
+                    width: 141%;
+                    font-size: 13px;
+                    margin-top: 73px;
+
+                }
+                .btn{
+                    margin-top: 73px;
+
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .hero-no-image{
+        .container{
+            .content{
+                h2{
+                    font-size: 31px;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .hero-no-image{
+        top: 508px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .hero-no-image{
+        top: 500px;
+        .container{
+            .content{
+                h2{
+                    width: 100%;
+                    font-size: 35px;
+                    height: 116px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+}

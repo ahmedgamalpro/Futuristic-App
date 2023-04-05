@@ -1,0 +1,108 @@
+header{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    .logo{
+        position: absolute;
+        top: 20px;
+    }
+    #bars{
+        position: absolute;
+        top: 20px;
+        right: 48px;
+        font-size: 25px;
+    }
+    nav{
+        .small-nav{
+            background-color: #0B0121;
+            position: absolute;
+            top: 0px;
+            right: -960px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+            transition: all 0.3s ease-in;
+            
+            
+            #close{
+                position: absolute;
+                top: 20px;
+                right: 48px;
+                font-size: 25px;
+            }
+            .nav-links{
+                li{
+                    margin-bottom: 30px;
+                    
+                }
+            }
+            .btn{
+                margin-bottom: 30px;
+            }
+        }
+        .large-nav{
+            display: none;
+        }
+    }
+}
+.small{
+    display: none;
+}
+.block{
+    display: block !important;
+}
+.open{
+    
+    position: absolute;
+    
+    left: 0px !important;
+}
+
+@media (min-width: 576px) {
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+   
+     
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    header{
+        display: flex;
+        #bars{
+            display: none;
+        }
+        nav{
+            .large-nav{
+                display: flex;
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                .nav-links{
+                    display: flex;
+                    position: absolute;
+                    top: 8px;
+                    left: -293px;
+                    li{
+                        margin-right: 30px;
+                    }
+                }
+                .btn{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+}
